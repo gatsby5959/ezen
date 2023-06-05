@@ -35,6 +35,7 @@ public class ArrayEx03 {
 		
 		
 		for(int i = 0 ; i<int_arr.length; i++) {
+//			int_arr[i] = (int)(Math.random()*45)+1;
 			System.out.print(int_arr[i] + " ");
 		}
 		System.out.println("    오름차순으로 완성");
