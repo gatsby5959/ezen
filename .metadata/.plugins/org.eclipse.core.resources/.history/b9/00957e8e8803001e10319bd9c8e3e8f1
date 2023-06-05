@@ -1,0 +1,21 @@
+package Day09;
+
+public class Method03 {
+	public static void main(String[] args) {
+
+		printMulti(2);
+//		System.out.println(printMulti(2));
+	}
+	// 정수(2~9까지중 하나)를 주면 해당 단의 구구단이 출력되는 메서드
+	// 매개변수 :
+	// 리언타입 :
+	// 매서드명 : printMulti
+
+	public static void printMulti(int num) {
+		for (int i = 1; i <= 9; i++) {
+			System.out.println("2*"+i+(2*i));
+		}
+		
+//		return Integer.toString(num) + " test중";
+	}
+}

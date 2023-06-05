@@ -1,0 +1,21 @@
+package Day09;
+
+public class Method04 {
+	public static void main(String[] args) {
+
+		
+		System.out.println(isPrime(5));
+	}
+	/*
+	 * 정수가 주어지면 이 정수가 소수 인지 아닌지 판별하고 싶어요
+	 * 소수 : 1과 자기자기자신외에는 나누어 떨어지지 않는 수
+	 * 리턴 타입 : boolean  true / false
+	 * 매개변수 : int num
+	 * 메서드명 : isPrime
+	 */
+	public static boolean isPrime(int num) {
+		
+		
+		return true;
+	}
+}
