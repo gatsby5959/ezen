@@ -1,0 +1,14 @@
+package Day08;
+
+public class 숙제 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 *   숫자를 입력받아 입력 받은 숫자를 거꾸로 출력
+		 *   ex) 11456 => 65411 => 6+5+4+1+1 => 결과값 출력
+		 *   /와 %를 이용하면 쉽게 할수 있어요
+		 */
+	}
+
+}

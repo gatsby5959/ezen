@@ -1,0 +1,24 @@
+package Day08;
+
+public class String01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * String 클래스 = 문자열을 다루는 클래스 => 참조변수
+		 * String str = new String(); //정석
+		 * String str = "홍길동"; //워낙 자주 써서 일반자료형처럼 이용가능(하지만 일반자료형은 아님)
+		 */
+		String str = "Hello World~!!"; //한글자마다 배열 처럼 이용
+		System.out.println(str);
+		
+		//length : 전체 글자의 길이
+		System.out.println("--length--");
+		System.out.println(str.length());
+		
+		//charAt(index) : index번지에 있는 문자열을 반환
+		System.out.println("--charAt(0)--");
+		System.out.println(str.charAt(0));
+	}
+
+}

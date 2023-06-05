@@ -1,0 +1,22 @@
+package Day08;
+
+public class ArrayEx01 {
+	public static void main(String[] args) {
+
+		/*
+		 * 1~10까지 담고 있는 배열을 생성 => 출력
+		 */
+		int arr0[] = new int[10];
+
+		for (int i = 0; i < arr0.length; i++) {
+			arr0[i] = i+1; // arr1로 arr의 값을 복사
+			System.out.print(arr0[i] + " ");
+		}
+		System.out.println();
+		
+		//배열을 섞는 코드
+		//랜덤 번지를 선택해서 순차적으로 하나씩 교환
+		int random = (int)(Math.random()*9)+1;
+		System.out.println(random);
+	}
+}

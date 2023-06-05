@@ -1,0 +1,12 @@
+package Day04;
+
+public class 숙제2 {
+
+	public static void main(String[] args) {
+		int n = 2;// 단에 해당하는 값을 저장
+		for (int i = 1; i <= 9; i++) {
+			System.out.println(i + " * " + i + " = " + (n * i));
+		}
+	}
+
+}

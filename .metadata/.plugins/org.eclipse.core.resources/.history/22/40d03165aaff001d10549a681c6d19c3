@@ -1,0 +1,89 @@
+package Day06;
+
+import java.util.Scanner;
+
+public class 소수구하기 {
+	public static void main(String[] args) {
+		/* 소수 : 약수가 1과 자기자식만의 수만 가지는 수를 소수
+		 * 소수 : 3, 5, 7, 11, 13, 17 ....
+		 * 소수는 약수가 2개인 수(1과, 나 자신)
+		 */
+		/* num를 입력 받아서 num가 소수인지 아닌지 판별
+		 * ex ) num = 13 : 소수입니다.
+		 * ex ) num = 12 : 소수가 아닙니다.
+		 */
+//		int num;
+//		Scanner scan = new Scanner(System.in);
+//		System.out.println("숫자를 입력해주세요~!!");
+//		num = scan.nextInt();
+//		System.out.println(num);
+//		//약수관련 구하기-----------------------------------------S
+//		System.out.print(num + " 의 약수는 "); 
+//		int numcount = 0; //약수의 개수를 세기 위한 변수
+//		for (int i = 1; i <= num; i++) {
+//			if (num % i == 0) { //약수의 조건
+//				//약수가 발생되었다.
+//				System.out.print(i);
+//				numcount = numcount +1;
+//				if (i != num) {
+//					System.out.print(", ");
+//				}
+//			}		
+//		}
+//		System.out.println(" 입니다.");
+//		System.out.println("약수가 " + numcount + "개 입니다"); 
+//		//약수관련 구하기-----------------------------------------E
+//		
+//		//---------------------------------------------S
+//		if(numcount==2) {
+//			System.out.println("소수입니다."); //소수관련 구하기
+//		}else {
+//			System.out.println("소수가 아닙니다.");
+//		}
+//		//---------------------------------------------E
+		
+		
+		int num;
+		int numcount = 0;
+		//2~100까지의 소수에 해당 하는 것만을 출력
+		System.out.println("2~100까지의 소수에 해당 하는 것만을 출력을 하겠습니다.");
+		int num2=0 ;
+		int num100=0 ;
+		int numcount3 = 0;//약수의 개수를 세기 위한 변수
+		for(num2=2; num2<=100; num2++) {
+			System.out.println(num2);
+			
+			System.out.print(num2 + " 의 약수는 "); 
+			for (int i = 1; i <= num2; i++) {
+				if (num2 % i == 0) { //약수의 조건
+					//약수가 발생되었다.
+					System.out.print(i);
+					numcount = numcount +1;
+					if (i != num2) {
+						System.out.print(", ");
+					}
+				}
+				
+				if(numcount==2) {
+					System.out.println(num2 + "<--이거 소수입니다."); //소수관련 구하기
+				}else {
+					System.out.println("소수가 아닙니다.");
+				}
+			}
+//			System.out.println(" 입니다.");
+//			System.out.println("약수가 " + numcount + "개 입니다"); 
+			//약수관련 구하기-----------------------------------------E
+			
+			//---------------------------------------------S
+
+			
+			
+			
+			
+		}//end for
+		
+		
+//		scan.close();
+		
+	}
+}

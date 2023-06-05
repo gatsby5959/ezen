@@ -1,0 +1,39 @@
+package Day08;
+
+public class ArrayEx02 {
+	public static void main(String[] args) {
+		/*
+		 * 1~50까지의 랜덤수를 10개 생성하여 배열에 저장하고, 출력
+		 * 오름차순 정렬하여 출력
+		 */
+		int arr0[] = new int[10]; //배열 10개 일단 만듬
+		
+		int min = 1;
+		int max = 50;
+		for(int i=0; i<arr0.length; i++) {
+			int random = (int)(Math.random()*max)+min;  //int 1부터 50개를 만들기...
+			arr0[i] = random;   //랜덤하게 생성된 값을 각 배열칸에 넣어주기
+		}
+		
+		for(int confo : arr0) {
+			System.out.print(confo + " "); // 배열에 저장된값 출력
+		}
+		System.out.println();
+		//S---오른차순정렬 -------------------------------------------------S
+		for(int i=0; i<arr0.length; i++) {
+			for(int j=i+1; j<arr0.length; j++) {
+				if(arr0[i]>arr0[j]) {  //오름차순        내림차수는'<'로부등호 바꿈
+					//교환코드
+					int tmp = arr0[i];
+					arr0[i] = arr0[j];
+					arr0[j] = tmp;
+				}
+			}
+		}//end for
+		//E---오른차순정렬 -------------------------------------------------E
+		for(int confo : arr0) {
+			System.out.print(confo + " "); // 배열에 저장된값 출력
+		}
+		
+	}//end main
+}

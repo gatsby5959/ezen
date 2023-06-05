@@ -1,0 +1,18 @@
+package Day08;
+
+public class 숙제 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 *   숫자를 입력받아 입력 받은 숫자를 거꾸로 출력
+		 *   ex) 11456 => 출력 : 65411 => 6+5+4+1+1 => 결과값 출력
+		 *   ex) 19781 => 출력 : 18791 => 1+8+7+9+1 => 결과값 출력
+		 */
+		
+		
+		System.out.println("숫자를 입력해주세요");
+		
+	}
+
+}
