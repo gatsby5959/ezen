@@ -1,0 +1,10 @@
+package Day09;
+
+public class Method01 {
+	public static void main(String[] args) {
+		/*
+		 * Method(메서드) : 기능(함수) , function
+		 * 메서드 선언 및 구현
+		 */
+	}
+}

@@ -1,0 +1,15 @@
+package Day09;
+
+public class Method01 {
+	public static void main(String[] args) {
+		/*
+		 * Method(메서드) : 기능(함수) , function
+		 * 메서드 선언 및 구현
+		 * 접근제한자 리턴타입 메서드명(매개변수){
+		 * 기능구현;
+		 * }
+		 * -접근제한자 : 접근할수 있는 주체의 제한범위
+		 * -리턴타입 : 반환값(메서드 실행 후 결과로 알려주는 값의 자료형)
+		 */
+	}
+}
