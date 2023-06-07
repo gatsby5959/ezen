@@ -1,0 +1,27 @@
+package Day10;
+
+public class Method06 {
+	public static void main(String[] args) {
+		/*메서드를 활용해서 배열을 활용
+		 * 
+		 */
+		int arr[] = new int[] {1,3,5,7,4,8,9,6,2,10,11,1,15,16,12,14,13};
+		
+		printArray(arr);
+	}
+	
+	/*주어진 정수 배열을 콘솔에 출력하는 메서드
+	 * 매개변수 : 정수 배열(arr)받아옴 (arr[])
+	 * 리턴타입 : 출력 = >  없음 void
+	 * 메서드명 : printArray
+	 * 5개씩 한줄로 나열
+	 */
+	public static void printArray(int a[]) {
+		for(int i=0;i<a.length;i++) {
+		System.out.print(a[i]);
+		if(i!=0 && i%5==0) {
+			System.out.println();
+		}
+		}
+	}
+}
