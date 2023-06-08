@@ -74,12 +74,23 @@ public class 숙제정답 {
 			//숫자 비교
 			for(int i = 0; i<comNum.length; i++) {
 				for(int j = 0; j< myNum.length; j++) {
-					if(comNum[i] == myNum[j] && i == j) {
+					if(comNum[i] == myNum[j] && i == j) { // 값 + 자리수도 같은 경우
 						stk++;
-					}else if(comNum[i] == myNum[j] && i != j) {
-						
+					}else if(comNum[i] == myNum[j] && i != j) { //값만 같은 경우(자리 수는 다른경우)
+						ball++;
 					}
 				}
+			}
+			
+			//출력
+			if(stk==0 && ball==0) {
+				System.out.println("out~!!");
+			}else {
+				System.out.println(">"+stk+"s "+ball+"b");
+			}
+			if(stk==3) {
+				System.out.println("축~!! 성공, 게임종료~!!");
+				break;
 			}
 			
 		}
