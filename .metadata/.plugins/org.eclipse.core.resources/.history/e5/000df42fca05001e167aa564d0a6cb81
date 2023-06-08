@@ -1,0 +1,42 @@
+package Day10;
+
+import java.util.Scanner;
+
+public class 숙제 {
+	public static void main(String[] args) {
+		
+		/*
+		 * 야구게임
+		 * 컴퓨터가 3자리 숫자를 생성 (각자리 수는 1~9까지의 수)
+		 * 유저는 3자리의 숫자를 맞추는 게임입니다. ?????????????????????????????????????????
+		 * 자리와 숫자가 일치하면 strike   자리 + 숫자 => strke
+		 * 숫자만 맞으면 ball, 아무것도 안맞으면 out  자리 X 숮자 O ===> ball
+		 * 
+		 * ex)컴퓨터 생성번호 : 1 2 3
+		 * 사용자 번호 : 1 7 8  => 1s
+		 * 사용자 번호 : 1 3 2  => 1s 2b
+		 * 사용자 번호 : 7 8 9  => out
+		 * 사용자 번호 : 1 2 3  => 3s 종료
+		 */
+		/*
+		 * 각자리의 숫자를 배열로 넣고 시작
+		 */		
+		 
+		Scanner scan = new Scanner(System.in);
+		int comNum[] = new int[3]; //컴퓨터 숫자 배열
+		int myNum[] = new int[3]; //내 배열
+	
+		System.out.println("--comNum--");
+		// static 의 특징 객체를 만들지 않고 클래스명으로 호출가능.
+		// 객체 생성 후 메서드 호출 (일반적인 방법)
+		Method07_lotto me = new Method07_lotto();
+		me.randomArray(comNum);
+		me.printArray(comNum);
+		
+		System.out.println("--myNum--");
+		Method07_lotto.randomArray(myNum);
+		Method07_lotto.printArray(myNum);
+		
+
+	}
+}

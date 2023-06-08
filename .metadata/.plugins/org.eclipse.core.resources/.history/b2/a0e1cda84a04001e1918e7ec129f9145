@@ -1,0 +1,14 @@
+package Omr_example.Day03;
+
+public class Switch문02 {
+	public static void main(String[] args) {
+		/* 숙제 (클럽에 제출)
+		 * 정수 2개와 연산자 하나를 입력받아 두 정수의 연산을 출력
+		 * 연산자는 + - * / % 중 하나를 입력받기
+		 * ex) 3 2 +   => 3 + 2 = 5
+		 * ex) 3 2 -   => 3 - 2 = 1
+		 * ex) 3 2 *   => 3 * 2 = 6
+		 * */
+	}
+}
+

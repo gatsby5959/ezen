@@ -1,0 +1,39 @@
+package Day09;
+
+public class Method02 {
+	// + - * % 의 결과를 알려주는 메서드를 생성
+	// main에서 호출해서 확인
+
+	public static int add(int a, int b) {
+		return a + b;
+	}
+
+	public static int sub(int a, int b) {
+//		return a-b;
+
+		if (a < b) {
+			return b - a;
+		} else {
+			return a - b;
+		}
+	}
+
+	public static int gophagi(int a, int b) {
+		return a * b;
+	}
+
+	public static double naugi(int a, int b) {
+		if (a < b) {
+			return (double) b / a;
+		} else {
+			return (double) a / b;
+		}
+	}
+
+	public static void main(String[] args) {
+		System.out.println(add(1, 2));
+		System.out.println(sub(2, 3));
+		System.out.println(gophagi(4, 5));
+		System.out.println(naugi(6, 7));
+	}
+}

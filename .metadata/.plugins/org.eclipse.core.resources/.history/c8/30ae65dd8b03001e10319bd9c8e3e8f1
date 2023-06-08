@@ -1,0 +1,42 @@
+package Day09;
+
+public class Method04 {
+	public static void main(String[] args) {
+
+		
+		System.out.println(isPrime(1000));
+	}
+	/*
+	 * 정수가 주어지면 이 정수가 소수 인지 아닌지 판별하고 싶어요
+	 * 소수 : 1과 자기자기자신외에는 나누어 떨어지지 않는 수
+	 * 리턴 타입 : boolean  true / false
+	 * 매개변수 : int num
+	 * 메서드명 : isPrime
+	 */
+	public static boolean isPrime(int num) {
+
+		
+		int cnt = 0;
+		for (int i = 1; i <= num; i++) { // 2~100까지의 수
+			cnt = 0; // 다음수의 약수의 개수를 정확히 구하기 위해 초기화
+			for (int j = 1; j <= i; j++) { // 나누는 수
+				if (i % j == 0) {
+					cnt++;
+				}
+			}
+			
+			
+			
+		}
+		// 약수개수가 2개인지 체크
+					if (cnt == 2) {
+//						System.out.println(i + " ");
+						return true;
+					}
+			
+		
+		return false;
+		
+	}
+	
+}

@@ -1,0 +1,45 @@
+package Day11;
+
+public class Class02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car c = new Car();
+		c.color = "red";
+		c.power = true;
+		c.speedUp();
+		System.out.println("My Car color : "+ c.color);
+		System.out.println("My Car color : "+ (c.power?"On":"Off"));
+		System.out.println("My Car color : "+ c.speed);
+		c.speedUp();
+		c.speedUp();
+		c.speedUp();
+		c.speedUp();
+		c.speedUp();
+		c.speedUp();
+		c.speedUp();
+		
+		System.out.println("My Car color : "+ c.color);
+		System.out.println("My Car color : "+ (c.power?"On":"Off"));
+		System.out.println("My Car color : "+ c.speed);
+
+	}
+
+} //end class
+
+class Car{ //클래스명은 대문자로 시작
+	//멤버변수
+	String color;
+	boolean power;
+	int speed;
+	
+	public void power() {
+		power = !power;
+	}
+	public void speedUp() {
+		speed++;
+	}
+	public void speedDown() {
+		speed--;
+	}
+}

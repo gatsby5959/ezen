@@ -1,0 +1,92 @@
+package Day10;
+
+public class Method07_lotto {
+	public static void main(String[] args) {
+		/*
+		 * 로또 번호 생성 (1~45 랜덤으로 생성)
+		 * 당첨 확인
+		 */
+		int lotto[] = new int [7];	//당첨번호+보너스번호 ===> 랜덤 생성
+		int user[] = new int[6];	//사용자번호
+	
+		int random45=0;
+		random45 = random();
+		randomArray(lotto,7);
+		randomArray(user,6);
+	}	
+	/*
+	 * 1.번호를 랜덤으로 생성하는 기능.
+	 * 1~45까지 램덤생성
+	 * 매개변수:
+	 * 리턴타입:
+	 * 매서드명 : ramdom
+	 */
+	public static int random() {
+		//1~45까지의 랜덤수 추출
+		//(int)(Math.random()*n)+start;
+		int random = (int)(Math.random()*45)+1;
+		return random;
+	}
+	
+	
+	
+	
+	/*
+	 * 2. 방금생성한 랜덤을 배열에 저장
+	 * 배열에 1번의 랜덤번호를 저장하는 기능.
+	 * 매개변수 :
+	 * 리턴타입 :
+	 * 메서드명 : randomArray
+	 */
+	public static void randomArray( int[] arr, int rand45) {
+//		int[] a = null;
+//		a = new int[arr.length];
+		
+		for(int i = 0; i<arr.length; i++) {
+			arr[i] = random();
+			System.out.print(arr[i]+ " ");
+		}
+		
+		
+		
+//		return a; 
+	}
+	
+	
+	/* 3.
+	 * 배열을 콘솔에 출력하는 기능
+	 * 매개변수 :
+	 * 리턴타입 : void
+	 * 메서드명 : printArray
+	 */
+	public static void printArray() {}
+	
+	
+	
+	
+	/*
+	 *4. 같은 값이 있는지 확인하는 메서드
+	 *매개변수 :
+	 *리턴타입 :
+	 *메서드명 : isContatin 
+	 */
+	public static void printArray() {}
+	
+	
+	
+	
+	/*
+	 * 5. 등수를 알려주는 메서드
+	 * 매개변수 :
+	 * 리턴타입 :
+	 * 메서드명 : lottoRank
+	 * -- 당첨기준
+	 * 6개 일치 : 1등
+	 * 5개 일치 + 보너스 :  2등
+	 * 5개 일치 : 3등
+	 * 4개 일치 : 4등
+	 * 3개 일치 : 5등
+	 * 나머지는 꽝
+	 */
+	public static void lottoRank() {}
+}
